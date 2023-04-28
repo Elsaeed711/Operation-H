@@ -55,9 +55,10 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(panel3);
-            panel1.Location = new Point(164, 34);
+            panel1.Location = new Point(144, 26);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(971, 504);
+            panel1.Size = new Size(850, 378);
             panel1.TabIndex = 0;
             // 
             // panel3
@@ -72,28 +73,32 @@
             panel3.Controls.Add(label1);
             panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(503, 0);
+            panel3.Location = new Point(440, 0);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(468, 504);
+            panel3.Size = new Size(410, 378);
             panel3.TabIndex = 0;
             // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(255, 238, 8);
             button1.ForeColor = Color.FromArgb(63, 61, 86);
-            button1.Location = new Point(30, 364);
+            button1.Location = new Point(26, 273);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(400, 54);
+            button1.Size = new Size(350, 40);
             button1.TabIndex = 10;
             button1.Text = "LOGIN";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(372, 279);
+            pictureBox4.Location = new Point(326, 209);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(58, 25);
+            pictureBox4.Size = new Size(51, 19);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 9;
             pictureBox4.TabStop = false;
@@ -102,9 +107,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(372, 167);
+            pictureBox3.Location = new Point(326, 125);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(58, 25);
+            pictureBox3.Size = new Size(51, 19);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
@@ -112,19 +118,21 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(173, 21);
+            pictureBox2.Location = new Point(151, 16);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(111, 91);
+            pictureBox2.Size = new Size(97, 68);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(15, 270);
+            textBox2.Location = new Point(13, 202);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(427, 43);
+            textBox2.Size = new Size(374, 33);
             textBox2.TabIndex = 6;
             // 
             // label2
@@ -132,18 +140,19 @@
             label2.AutoSize = true;
             label2.Font = new Font("Courier New", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveBorder;
-            label2.Location = new Point(15, 245);
+            label2.Location = new Point(13, 184);
             label2.Name = "label2";
-            label2.Size = new Size(34, 22);
+            label2.Size = new Size(28, 18);
             label2.TabIndex = 5;
             label2.Text = "ID";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(15, 158);
+            textBox1.Location = new Point(13, 118);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(427, 43);
+            textBox1.Size = new Size(374, 33);
             textBox1.TabIndex = 4;
             // 
             // label1
@@ -152,9 +161,9 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Courier New", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ActiveBorder;
-            label1.Location = new Point(15, 133);
+            label1.Location = new Point(13, 100);
             label1.Name = "label1";
-            label1.Size = new Size(58, 22);
+            label1.Size = new Size(48, 18);
             label1.TabIndex = 2;
             label1.Text = "Name";
             // 
@@ -162,17 +171,19 @@
             // 
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(468, 55);
+            panel4.Size = new Size(410, 41);
             panel4.TabIndex = 1;
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(164, 34);
+            panel2.Location = new Point(144, 26);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(502, 504);
+            panel2.Size = new Size(439, 378);
             panel2.TabIndex = 0;
             // 
             // pictureBox1
@@ -180,8 +191,9 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(502, 504);
+            pictureBox1.Size = new Size(439, 378);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -189,14 +201,15 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 238, 8);
-            ClientSize = new Size(1315, 780);
+            ClientSize = new Size(1152, 591);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             MinimizeBox = false;
-            MinimumSize = new Size(1333, 827);
+            MinimumSize = new Size(1168, 630);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
